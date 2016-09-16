@@ -1,0 +1,4 @@
+
+var pType=Runner.pages.constants.PAGE_LIST;Runner.pages.PageSettings.addPageEvent("inviteLetter",pType,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Print11';if(!pageObj.buttonEventBefore['Print11']){pageObj.buttonEventBefore['Print11']=function(params,ctrl,pageObj,proxy,pageid,rowData){}}
+if(!pageObj.buttonEventAfter['Print11']){pageObj.buttonEventAfter['Print11']=function(result,ctrl,pageObj,proxy,pageid,rowData){var paperID=result["paperID"];var ViewURL="x_inviteLetter.php?paperID="+paperID;window.open(ViewURL,"_blank");;;}}
+$('a[id=Print11]').each(function(){if(!$(this).closest('tr.gridRowAdd').length){var newId="Print11"+"_"+Runner.genId();this.id=newId;var button_Print11=new Runner.form.Button({id:newId,btnName:"Print11"});button_Print11.init({args:[pageObj,proxy,pageid]});}});});

@@ -1,0 +1,44 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="runner-c" cellpadding="0">
+{BEGIN currency_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_currency {$fielddispclass_currency}">
+				{BEGIN currency_label}Currency{END currency_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_currency {$fielddispclass_currency}">
+				{$currency_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END currency_tabfieldblock}
+{BEGIN ticketPrice_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_ticketPrice {$fielddispclass_ticketPrice}">
+				{BEGIN ticketPrice_label}Ticket Price{END ticketPrice_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_ticketPrice {$fielddispclass_ticketPrice}">
+				{$ticketPrice_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END ticketPrice_tabfieldblock}
+</table>
+
+
+
+
+
+{END container_1}
+
+</div>

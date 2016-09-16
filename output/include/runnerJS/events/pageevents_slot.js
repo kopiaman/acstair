@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent("slot",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Send_to_Email';if(!pageObj.buttonEventBefore['Send_to_Email']){pageObj.buttonEventBefore['Send_to_Email']=function(params,ctrl,pageObj,proxy,pageid,rowData){}}
+if(!pageObj.buttonEventAfter['Send_to_Email']){pageObj.buttonEventAfter['Send_to_Email']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message="Done !!!";ctrl.setMessage(message);}}
+$('a[id=Send_to_Email]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="Send_to_Email"+"_"+Runner.genId();var button_Send_to_Email=new Runner.form.Button({id:this.id,btnName:"Send_to_Email"});button_Send_to_Email.init({args:[pageObj,proxy,pageid]});});});

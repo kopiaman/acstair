@@ -1,0 +1,65 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="fieldGrid">
+{BEGIN institution_tabfieldblock}
+<tr class="{$fielddispclass_institution}" data-fieldname="institution">
+	<td class="style1 rnr-label">
+		{BEGIN institution_label}{$label user institution}{END institution_label}
+	</td>
+	<td class="rnr-control style3">
+		{$institution_editcontrol}&nbsp;
+	</td>
+</tr>
+{END institution_tabfieldblock}
+{BEGIN faculty_tabfieldblock}
+<tr class="{$fielddispclass_faculty}" data-fieldname="faculty">
+	<td class="style1 rnr-label">
+		{BEGIN faculty_label}{$label user faculty}{END faculty_label}
+	</td>
+	<td class="rnr-control style3">
+		{$faculty_editcontrol}&nbsp;
+	</td>
+</tr>
+{END faculty_tabfieldblock}
+{BEGIN department_tabfieldblock}
+<tr class="{$fielddispclass_department}" data-fieldname="department">
+	<td class="style1 rnr-label">
+		{BEGIN department_label}{$label user department}{END department_label}
+	</td>
+	<td class="rnr-control style3">
+		{$department_editcontrol}&nbsp;
+	</td>
+</tr>
+{END department_tabfieldblock}
+{BEGIN research_tabfieldblock}
+<tr class="{$fielddispclass_research}" data-fieldname="research">
+	<td class="style1 rnr-label">
+		{BEGIN research_label}{$label user research}{END research_label}
+	</td>
+	<td class="rnr-control style3">
+		{$research_editcontrol}&nbsp;
+	</td>
+</tr>
+{END research_tabfieldblock}
+{BEGIN student_tabfieldblock}
+<tr class="{$fielddispclass_student}" data-fieldname="student">
+	<td class="style1 rnr-label">
+		{BEGIN student_label}{$label user student}{END student_label}
+	</td>
+	<td class="rnr-control style3">
+		{$student_editcontrol}&nbsp;
+	</td>
+</tr>
+{END student_tabfieldblock}
+</table>
+
+
+
+
+{END container_1}
+
+</div>

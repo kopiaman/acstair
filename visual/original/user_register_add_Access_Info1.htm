@@ -1,0 +1,44 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="runner-c" cellpadding="0">
+{BEGIN email_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_email {$fielddispclass_email}">
+				{BEGIN email_label}Email ( Your ID){END email_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_email {$fielddispclass_email}">
+				{$email_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END email_tabfieldblock}
+{BEGIN password_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_password {$fielddispclass_password}">
+				{BEGIN password_label}Password{END password_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_password {$fielddispclass_password}">
+				{$password_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END password_tabfieldblock}
+</table>
+
+
+
+
+
+{END container_1}
+
+</div>

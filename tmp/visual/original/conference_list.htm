@@ -1,0 +1,430 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+
+
+
+
+
+<div  class="style1 rnr-bl rnr-b-printpanel {$brickclass_printpanel}"></div>
+
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN menu_block}
+{$menu main horizontal}{END menu_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_hmenu}
+
+
+
+{BEGIN container_search}
+<div class="rnr-c rnr-ch rnr-c-search">
+
+
+
+<div class="rnr-hfiller"></div>
+{BEGIN details_block}
+<div  class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+
+</div>
+{END container_search}
+
+
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">		{BEGIN add_link}
+		<a href="conference_add.php{$addlink_getparams}" class="rnr-button" {$addlink_attrs}>Add new</a>
+	{END add_link}
+
+	
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">	
+	
+		{BEGIN deleteselected_link}
+		<a href="#" class="rnr-button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a>
+	{END deleteselected_link}
+
+	
+</div>
+{END record_controls_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																		{BEGIN conference_dtable_column}
+									<th >&nbsp;</th>
+									{END conference_dtable_column}
+																										{BEGIN cnameShort_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$cnameShort_class}">
+									{BEGIN cnameShort_fieldheader}
+																				<span {$cnameShort_orderlinkattrs}>
+											{$label conference cnameShort}
+										</span>
+									{END cnameShort_fieldheader}
+									</th>
+									{END cnameShort_fieldheadercolumn}
+
+																	{BEGIN sDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$sDate_class}">
+									{BEGIN sDate_fieldheader}
+																				<span {$sDate_orderlinkattrs}>
+											{$label conference sDate}
+										</span>
+									{END sDate_fieldheader}
+									</th>
+									{END sDate_fieldheadercolumn}
+
+																	{BEGIN eDate_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$eDate_class}">
+									{BEGIN eDate_fieldheader}
+																				<span {$eDate_orderlinkattrs}>
+											{$label conference eDate}
+										</span>
+									{END eDate_fieldheader}
+									</th>
+									{END eDate_fieldheadercolumn}
+
+																	{BEGIN location_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$location_class}">
+									{BEGIN location_fieldheader}
+																				<span {$location_orderlinkattrs}>
+											{$label conference location}
+										</span>
+									{END location_fieldheader}
+									</th>
+									{END location_fieldheadercolumn}
+
+																	{BEGIN city_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$city_class}">
+									{BEGIN city_fieldheader}
+																				<span {$city_orderlinkattrs}>
+											{$label conference city}
+										</span>
+									{END city_fieldheader}
+									</th>
+									{END city_fieldheadercolumn}
+
+																	{BEGIN cstatus_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$cstatus_class}">
+									{BEGIN cstatus_fieldheader}
+																				<span {$cstatus_orderlinkattrs}>
+											{$label conference cstatus}
+										</span>
+									{END cstatus_fieldheader}
+									</th>
+									{END cstatus_fieldheadercolumn}
+
+																	{BEGIN opt_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$opt_class}">
+									{BEGIN opt_fieldheader}
+																				<span {$opt_orderlinkattrs}>
+											{$label conference opt}
+										</span>
+									{END opt_fieldheader}
+									</th>
+									{END opt_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+																		{BEGIN edit_column}
+									{BEGIN edit_link}
+																			<a class="rnr-button-img" {$editlink_attrs} data-icon="edit" title="Edit"></a>
+									{END edit_link}
+									{END edit_column}
+
+									
+									
+																		</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+																		{BEGIN conference_dtable_column}
+									<td class="rnr-nowrap" {$rowstyle} {$recordattrs}>
+
+																		{BEGIN conslider_dtable_link}
+									<span>
+									<a {$conslider_dtablelink_attrs}>
+										Conslider
+																				<span {$conslider_childnumber_attr} dir="ltr">{BEGIN conslider_childcount}({$conslider_childnumber}){END conslider_childcount}</span>
+									</a>
+																		<br/>
+									</span>
+									{END conslider_dtable_link}
+									{BEGIN congallery_dtable_link}
+									<span>
+									<a {$congallery_dtablelink_attrs}>
+										Congallery
+																				<span {$congallery_childnumber_attr} dir="ltr">{BEGIN congallery_childcount}({$congallery_childnumber}){END congallery_childcount}</span>
+									</a>
+																		<br/>
+									</span>
+									{END congallery_dtable_link}
+									{BEGIN confees_dtable_link}
+									<span>
+									<a {$confees_dtablelink_attrs}>
+										Confees
+																				<span {$confees_childnumber_attr} dir="ltr">{BEGIN confees_childcount}({$confees_childnumber}){END confees_childcount}</span>
+									</a>
+																		<br/>
+									</span>
+									{END confees_dtable_link}
+									{BEGIN followup_dtable_link}
+									<span>
+									<a {$followup_dtablelink_attrs}>
+										Followup
+																				<span {$followup_childnumber_attr} dir="ltr">{BEGIN followup_childcount}({$followup_childnumber}){END followup_childcount}</span>
+									</a>
+																		<br/>
+									</span>
+									{END followup_dtable_link}
+									
+									</td>
+									{END conference_dtable_column}
+
+										{BEGIN cnameShort_fieldcolumn}
+	<td class="{$cnameShort_class}" {$cnameShort_style} {$recordattrs}>
+		{$cnameShort_value}
+	</td>
+{END cnameShort_fieldcolumn}
+
+	{BEGIN sDate_fieldcolumn}
+	<td class="{$sDate_class}" {$sDate_style} {$recordattrs}>
+		{$sDate_value}
+	</td>
+{END sDate_fieldcolumn}
+
+	{BEGIN eDate_fieldcolumn}
+	<td class="{$eDate_class}" {$eDate_style} {$recordattrs}>
+		{$eDate_value}
+	</td>
+{END eDate_fieldcolumn}
+
+	{BEGIN location_fieldcolumn}
+	<td class="{$location_class}" {$location_style} {$recordattrs}>
+		{$location_value}
+	</td>
+{END location_fieldcolumn}
+
+	{BEGIN city_fieldcolumn}
+	<td class="{$city_class}" {$city_style} {$recordattrs}>
+		{$city_value}
+	</td>
+{END city_fieldcolumn}
+
+	{BEGIN cstatus_fieldcolumn}
+	<td class="{$cstatus_class}" {$cstatus_style} {$recordattrs}>
+		{$cstatus_value}
+	</td>
+{END cstatus_fieldcolumn}
+
+	{BEGIN opt_fieldcolumn}
+	<td class="{$opt_class}" {$opt_style} {$recordattrs}>
+		{$opt_value}
+	</td>
+{END opt_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,262 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_main} rnr-wrapper rnr-cbw-main">
+
+{BEGIN container_main}
+<div class="rnr-c rnr-cv rnr-c-main">
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_view} rnr-wrapper rnr-cbw-view">
+
+{BEGIN container_view}
+<div class="rnr-c rnr-cv rnr-c-view">
+
+{BEGIN viewheader}
+<div  class="rnr-brickcontents style2 rnr-b-viewheader {$brickclass_viewheader}"><span>	<h1>{$pagetitlelabel paper view}</h1>
+</span></div>{END viewheader}
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-viewfields {$brickclass_viewfields}"><table class="fieldGrid">
+	{BEGIN paperRef_fieldblock}
+<tr class="{$fielddispclass_paperRef}" data-fieldname="paperRef">
+	<td class="rnr-label">
+		{$label paper paperRef}
+	</td>
+	<td class="rnr-control style3">
+		{$paperRef_value}&nbsp;
+	</td>
+</tr>
+{END paperRef_fieldblock}
+	{BEGIN cid_fieldblock}
+<tr class="{$fielddispclass_cid}" data-fieldname="cid">
+	<td class="rnr-label">
+		{$label paper cid}
+	</td>
+	<td class="rnr-control style3">
+		{$cid_value}&nbsp;
+	</td>
+</tr>
+{END cid_fieldblock}
+	{BEGIN fullName_fieldblock}
+<tr class="{$fielddispclass_fullName}" data-fieldname="fullName">
+	<td class="rnr-label">
+		{$label paper fullName}
+	</td>
+	<td class="rnr-control style3">
+		{$fullName_value}&nbsp;
+	</td>
+</tr>
+{END fullName_fieldblock}
+	{BEGIN institution_fieldblock}
+<tr class="{$fielddispclass_institution}" data-fieldname="institution">
+	<td class="rnr-label">
+		{$label paper institution}
+	</td>
+	<td class="rnr-control style3">
+		{$institution_value}&nbsp;
+	</td>
+</tr>
+{END institution_fieldblock}
+	{BEGIN funded_fieldblock}
+<tr class="{$fielddispclass_funded}" data-fieldname="funded">
+	<td class="rnr-label">
+		{$label paper funded}
+	</td>
+	<td class="rnr-control style3">
+		{$funded_value}&nbsp;
+	</td>
+</tr>
+{END funded_fieldblock}
+	{BEGIN title_fieldblock}
+<tr class="{$fielddispclass_title}" data-fieldname="title">
+	<td class="rnr-label">
+		{$label paper title}
+	</td>
+	<td class="rnr-control style3">
+		{$title_value}&nbsp;
+	</td>
+</tr>
+{END title_fieldblock}
+	{BEGIN cfid_fieldblock}
+<tr class="{$fielddispclass_cfid}" data-fieldname="cfid">
+	<td class="rnr-label">
+		{$label paper cfid}
+	</td>
+	<td class="rnr-control style3">
+		{$cfid_value}&nbsp;
+	</td>
+</tr>
+{END cfid_fieldblock}
+	{BEGIN date_submit_fieldblock}
+<tr class="{$fielddispclass_date_submit}" data-fieldname="date_submit">
+	<td class="rnr-label">
+		{$label paper date_submit}
+	</td>
+	<td class="rnr-control style3">
+		{$date_submit_value}&nbsp;
+	</td>
+</tr>
+{END date_submit_fieldblock}
+	{BEGIN paperStatus_fieldblock}
+<tr class="{$fielddispclass_paperStatus}" data-fieldname="paperStatus">
+	<td class="rnr-label">
+		{$label paper paperStatus}
+	</td>
+	<td class="rnr-control style3">
+		{$paperStatus_value}&nbsp;
+	</td>
+</tr>
+{END paperStatus_fieldblock}
+	{BEGIN paymentStatus_fieldblock}
+<tr class="{$fielddispclass_paymentStatus}" data-fieldname="paymentStatus">
+	<td class="rnr-label">
+		{$label paper paymentStatus}
+	</td>
+	<td class="rnr-control style3">
+		{$paymentStatus_value}&nbsp;
+	</td>
+</tr>
+{END paymentStatus_fieldblock}
+	{BEGIN multiAuthor_fieldblock}
+<tr class="{$fielddispclass_multiAuthor}" data-fieldname="multiAuthor">
+	<td class="rnr-label">
+		{$label paper multiAuthor}
+	</td>
+	<td class="rnr-control style3">
+		{$multiAuthor_value}&nbsp;
+	</td>
+</tr>
+{END multiAuthor_fieldblock}
+	{BEGIN abstract_fieldblock}
+<tr class="{$fielddispclass_abstract}" data-fieldname="abstract">
+	<td class="rnr-label">
+		{$label paper abstract}
+	</td>
+	<td class="rnr-control style3">
+		{$abstract_value}&nbsp;
+	</td>
+</tr>
+{END abstract_fieldblock}
+	{BEGIN fullPaper_fieldblock}
+<tr class="{$fielddispclass_fullPaper}" data-fieldname="fullPaper">
+	<td class="rnr-label">
+		{$label paper fullPaper}
+	</td>
+	<td class="rnr-control style3">
+		{$fullPaper_value}&nbsp;
+	</td>
+</tr>
+{END fullPaper_fieldblock}
+	{BEGIN PPT_fieldblock}
+<tr class="{$fielddispclass_PPT}" data-fieldname="PPT">
+	<td class="rnr-label">
+		{$label paper PPT}
+	</td>
+	<td class="rnr-control style3">
+		{$PPT_value}&nbsp;
+	</td>
+</tr>
+{END PPT_fieldblock}
+</table></div>
+
+
+{BEGIN viewbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-viewbuttons {$brickclass_viewbuttons}"><div class="rnr-buttons-right">
+{BEGIN prev_button}
+<a href="#" class="rnr-button {$prevbutton_class}" {$prevbutton_attrs}>&lt;&lt;&lt;</a>
+{END prev_button}
+{BEGIN next_button}
+<a href="#" class="rnr-button {$nextbutton_class}" {$nextbutton_attrs}>&gt;&gt;&gt;</a>
+{END next_button}
+</div>
+<div class="rnr-buttons-left">
+{BEGIN back_button}
+<a href="#" class="rnr-button" {$backbutton_attrs}>Back to list</a>
+{END back_button}
+{BEGIN close_button}
+<a href="#" class="rnr-button" {$closebutton_attrs}>Close window</a>
+{END close_button}
+</div>
+</div>{END viewbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_view}
+
+</div>
+
+
+</div>
+{END container_main}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

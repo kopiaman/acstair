@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 10.00.9200.16525"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}&nbsp;
+<TABLE class=runner-toptable cellPadding=0><TR class=runner-header><TD class=runner-top colSpan=3>{BEGIN container_add}<TABLE class="runner-c runner-c-add" cellPadding=0 align=center><TR class="{$cheaderclass_add}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        <TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}"><TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents runner-wrapper">{BEGIN container_fields}<TABLE class="runner-c runner-c-fields" cellPadding=0><TR class="{$cheaderclass_fields}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class="runner-cc alt"></TD>
+                <TD class="runner-cr alt"><IMG src="images/spacer.gif"></TD></TR>
+              {BEGIN fullPaper_fieldblock}<tr class="runner-row style1 runner-b-addfields"><td class="runner-cl"></td>
+	<td class="runner-cc runner-cc1"><div class="fieldlabel_fullPaper {$fielddispclass_fullPaper}">{BEGIN fullPaper_label}Full Paper{END fullPaper_label}
+		</div>
+	</td>
+	<td class="runner-cc alt runner-fixedcell"><div class="fieldcontrol_fullPaper {$fielddispclass_fullPaper}">{$fullPaper_editcontrol}&nbsp;
+		</div>
+	</td>
+	<td class="runner-cr alt"></td></tr>
+{END fullPaper_fieldblock}
+	{BEGIN userID_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_userID {$fielddispclass_userID}">{BEGIN userID_label}User {END userID_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_userID {$fielddispclass_userID}">{$userID_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END userID_fieldblock}{BEGIN date_submit_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_date_submit {$fielddispclass_date_submit}">{BEGIN date_submit_label}Date Submit {END date_submit_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_date_submit {$fielddispclass_date_submit}">{$date_submit_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END date_submit_fieldblock}{BEGIN cid_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_cid {$fielddispclass_cid}">{BEGIN cid_label}Conference {END cid_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_cid {$fielddispclass_cid}">{$cid_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END cid_fieldblock}{BEGIN paperStatus_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_paperStatus {$fielddispclass_paperStatus}">{BEGIN paperStatus_label}Paper Status {END paperStatus_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_paperStatus {$fielddispclass_paperStatus}">{$paperStatus_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END paperStatus_fieldblock}{BEGIN funded_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_funded {$fielddispclass_funded}">{BEGIN funded_label}Funded {END funded_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_funded {$fielddispclass_funded}">{$funded_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END funded_fieldblock}{BEGIN title_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_title {$fielddispclass_title}">{BEGIN title_label}Title {END title_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV class="fieldcontrol_title {$fielddispclass_title}">{$title_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END title_fieldblock}{BEGIN abstract_fieldblock}<TR class="runner-row style1 runner-b-addfields"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-cc1"><DIV class="fieldlabel_abstract {$fielddispclass_abstract}">{BEGIN abstract_label}Abstract {END abstract_label}</DIV></TD>
+                <TD class="runner-cc alt runner-fixedcell"><DIV 
+                  class="fieldcontrol_abstract {$fielddispclass_abstract}">{$abstract_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt"></TD></TR>
+              {END abstract_fieldblock}<TR class="runner-row style1"><TD class=runner-cl></TD>
+                <TD class=runner-cc colSpan=2>{$Section Institution_11}&nbsp; 
+                  </TD>
+                <TD class=runner-cr></TD></TR>
+              <TR class="runner-row style1"><TD class=runner-cl></TD>
+                <TD class=runner-cc colSpan=2>{$Section Institution_21}&nbsp; 
+                  </TD>
+                <TD class=runner-cr></TD></TR>
+              {BEGIN legend}<TR class="runner-row style3 runner-b-legend {$brickclass_legend}"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2><SPAN id=required_block{$id}><IMG alt=bullet src="images/icon_required.gif"> - Required field </SPAN></TD>
+                <TD class=runner-cr></TD></TR>
+              {END legend}<TR 
+              class="runner-row style2 runner-b-addbuttons {$brickclass_addbuttons}"><TD class=runner-cl></TD>
+                <TD class="runner-cc runner-brickcontents" colSpan=2>{BEGIN save_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$savebutton_attrs}>Save</A> 
+                  </SPAN>{END save_button}{BEGIN cancel_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$cancelbutton_attrs}>Cancel</A> 
+                  </SPAN>{END cancel_button}</TD>
+                <TD class=runner-cr></TD></TR>
+              <TR class="{$cfooterclass_fields}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cc></TD>
+                <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_fields}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR class="{$cfooterclass_add}"><TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TABLE>{END container_add}</TD></TR>
+  <TR class=runner-body><TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer><TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TABLE>{$footer}{END body} </BODY></HTML>

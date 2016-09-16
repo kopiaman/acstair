@@ -1,0 +1,228 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_all}
+<div class="rnr-c rnr-cv rnr-c-all">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_add} rnr-wrapper rnr-cbw-add">
+
+{BEGIN container_add}
+<div class="rnr-c rnr-cv rnr-c-add">
+
+{BEGIN addheader}
+<div  class="rnr-brickcontents style2 rnr-b-addheader {$brickclass_addheader}"><span>	<h1>{$pagetitlelabel conference add}</h1>
+</span></div>{END addheader}
+
+
+{BEGIN message_block}
+<div  class="rnr-brickcontents style1 rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>{END message_block}
+
+
+
+
+<div  class="rnr-brickcontents style1 rnr-b-wrapper {$wrapperclass_fields} rnr-wrapper rnr-cbw-fields">
+
+{BEGIN container_fields}
+<div class="rnr-c rnr-cv rnr-c-fields">
+
+
+<div  class="rnr-brickcontents style1 rnr-b-addfields {$brickclass_addfields}"><table class="fieldGrid">
+	{BEGIN gallery_fieldblock}
+<tr class="{$fielddispclass_gallery}" data-fieldname="gallery">
+	<td class="rnr-label">
+		{BEGIN gallery_label}{$label conference gallery}{END gallery_label}
+	</td>
+	<td class="rnr-control style3">
+		{$gallery_editcontrol}&nbsp;
+	</td>
+</tr>
+{END gallery_fieldblock}
+	{BEGIN proceeding_fieldblock}
+<tr class="{$fielddispclass_proceeding}" data-fieldname="proceeding">
+	<td class="rnr-label">
+		{BEGIN proceeding_label}{$label conference proceeding}{END proceeding_label}
+	</td>
+	<td class="rnr-control style3">
+		{$proceeding_editcontrol}&nbsp;
+	</td>
+</tr>
+{END proceeding_fieldblock}
+	{BEGIN cnameCode_fieldblock}
+<tr class="{$fielddispclass_cnameCode}" data-fieldname="cnameCode">
+	<td class="rnr-label">
+		{BEGIN cnameCode_label}{$label conference cnameCode}{END cnameCode_label}
+	</td>
+	<td class="rnr-control style3">
+		{$cnameCode_editcontrol}&nbsp;
+	</td>
+</tr>
+{END cnameCode_fieldblock}
+	{BEGIN cnameShort_fieldblock}
+<tr class="{$fielddispclass_cnameShort}" data-fieldname="cnameShort">
+	<td class="rnr-label">
+		{BEGIN cnameShort_label}{$label conference cnameShort}{END cnameShort_label}
+	</td>
+	<td class="rnr-control style3">
+		{$cnameShort_editcontrol}&nbsp;
+	</td>
+</tr>
+{END cnameShort_fieldblock}
+	{BEGIN cname_fieldblock}
+<tr class="{$fielddispclass_cname}" data-fieldname="cname">
+	<td class="rnr-label">
+		{BEGIN cname_label}{$label conference cname}{END cname_label}
+	</td>
+	<td class="rnr-control style3">
+		{$cname_editcontrol}&nbsp;
+	</td>
+</tr>
+{END cname_fieldblock}
+	{BEGIN slogan_fieldblock}
+<tr class="{$fielddispclass_slogan}" data-fieldname="slogan">
+	<td class="rnr-label">
+		{BEGIN slogan_label}{$label conference slogan}{END slogan_label}
+	</td>
+	<td class="rnr-control style3">
+		{$slogan_editcontrol}&nbsp;
+	</td>
+</tr>
+{END slogan_fieldblock}
+	{BEGIN cstatus_fieldblock}
+<tr class="{$fielddispclass_cstatus}" data-fieldname="cstatus">
+	<td class="rnr-label">
+		{BEGIN cstatus_label}{$label conference cstatus}{END cstatus_label}
+	</td>
+	<td class="rnr-control style3">
+		{$cstatus_editcontrol}&nbsp;
+	</td>
+</tr>
+{END cstatus_fieldblock}
+		
+<tr>
+	<td colspan="2">
+		{$Section Date_Time1}&nbsp;	
+	</td>
+</tr>
+
+	<tr>
+	<td colspan="2">
+		{$Section Venue1}&nbsp;	
+	</td>
+</tr>
+
+	<tr>
+	<td colspan="2">
+		{$Section About1}&nbsp;	
+	</td>
+</tr>
+
+	<tr>
+	<td colspan="2">
+		{$Section Sub_Theme1}&nbsp;	
+	</td>
+</tr>
+
+	<tr>
+	<td colspan="2">
+		{$Section Important_Date1}&nbsp;	
+	</td>
+</tr>
+
+	<tr>
+	<td colspan="2">
+		{$Section Accomodation1}&nbsp;	
+	</td>
+</tr>
+
+	<tr>
+	<td colspan="2">
+		{$Section Visa___Immigration1}&nbsp;	
+	</td>
+</tr>
+
+</table></div>
+
+
+{BEGIN addbuttons}
+<div  class="rnr-brickcontents style2 rnr-b-addbuttons {$brickclass_addbuttons}"><div class="rnr-buttons-left">
+		{BEGIN save_button}
+	<a href="#" class="rnr-button main" id="saveButton{$id}" {$savebutton_attrs}>Save</a>
+	{END save_button}
+	{BEGIN reset_button}
+	<a href="#" class="rnr-button" id="resetButton{$id}">Reset</a>
+	{END reset_button}
+	{BEGIN cancel_button}
+	<a href="#" class="rnr-button" id="cancelButton{$id}">Cancel</a>
+	{END cancel_button}
+	{BEGIN back_button}
+	<a href="#" class="rnr-button" id="backButton{$id}">Back to list</a>
+	{END back_button}
+	{BEGIN backToMenu_button}
+	<a href="#" class="rnr-button" id="backToMenuButton{$id}">Back to menu</a>
+	{END backToMenu_button}
+</div>
+</div>{END addbuttons}
+
+
+</div>
+{END container_fields}
+
+</div>
+
+
+</div>
+{END container_add}
+
+</div>
+
+
+
+</div>
+{END container_all}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,408 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>{$pagetitle}</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link REL="stylesheet" href="styles/default.css" type="text/css">
+		{BEGIN rtlCSS}
+		<link REL="stylesheet" href="styles/defaultRTL.css" type="text/css">
+		{END rtlCSS}
+		{BEGIN styleCSSFiles}
+		<link REL="stylesheet" href="{$stylepath}" type="text/css">
+		{END styleCSSFiles}
+		{BEGIN pageCSSFiles}
+		<link REL="stylesheet" href="{$pagestylepath}" type="text/css">
+		{END pageCSSFiles}
+	</head>
+	
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+	<div class="rnr-page">
+		<div class="rnr-top {$blockclass_top}">
+			
+
+{BEGIN container_master}
+<div class="rnr-c rnr-ch rnr-c-master">
+
+{BEGIN mastertable_block}
+<div  class="style1 rnr-bl rnr-b-masterinfo {$brickclass_masterinfo}">{$showmasterfile}
+<a class="runner-link" {$backtomasterlink_attrs}>
+	<b>Back to {$backtomasterlink_caption}</b>
+</a></div>
+{END mastertable_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_master}
+
+
+
+{BEGIN container_toplinks}
+<div class="rnr-c rnr-ch rnr-c-toplinks">
+
+{BEGIN security_block}
+<div  class="style1 rnr-bl rnr-b-loggedas {$brickclass_loggedas}"><div id="login_block{$id}">
+	{BEGIN loggedas_message} 
+	<span>Logged on as&nbsp;<b>{$username}</b>&nbsp;</span> 
+	{END loggedas_message}
+	{BEGIN guestloginbutton}
+	<span>
+		<a href="#" class="rnr-button" {$guestloginlink_attrs}>Login</a>
+	</span>
+	{END guestloginbutton}
+	{BEGIN logoutbutton}
+	<a href="#" class="rnr-button" {$logoutlink_attrs}>Log out</a>
+	{END logoutbutton}
+
+</div></div>
+{END security_block}
+
+
+
+
+
+
+
+<div  class="style1 rnr-bl rnr-b-printpanel {$brickclass_printpanel}"></div>
+
+
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_toplinks}
+
+
+
+{BEGIN container_hmenu}
+<div class="rnr-c rnr-ch rnr-c-hmenu">
+
+{BEGIN menu_block}
+{$menu main horizontal}{END menu_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_hmenu}
+
+
+
+{BEGIN container_search}
+<div class="rnr-c rnr-ch rnr-c-search">
+
+
+
+<div class="rnr-hfiller"></div>
+{BEGIN details_block}
+<div  class="style1 rnr-br rnr-b-details_found {$brickclass_details_found}">	<span {$details_attrs}>
+			Details found: <b><span class="rnr-details_found_count">{$records_found}</span></b>
+	</span>
+</div>
+{END details_block}
+
+
+{BEGIN pages_block}
+<div  class="style1 rnr-br rnr-b-page_of {$brickclass_page_of}">	<span {$pages_attrs}>
+		Page <b>{$page}</b> of <b>{$maxpages}</b>
+	</span>
+
+</div>
+{END pages_block}
+
+
+{BEGIN recordspp_block}
+<div  class="style1 rnr-br rnr-b-recsperpage {$brickclass_recsperpage}">	<span id="recordspp_block{$id}" name="recordspp_block{$id}">
+			Records Per Page:&nbsp;{$recsPerPage}
+	</span>	
+</div>
+{END recordspp_block}
+
+
+</div>
+{END container_search}
+
+
+
+{BEGIN container_recordcontrols}
+<div class="rnr-c rnr-ch rnr-c-recordcontrols">
+
+{BEGIN newrecord_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrols_new {$brickclass_recordcontrols_new}">	
+		{BEGIN inlineadd_link}
+		<a href="#" class="rnr-button" {$inlineaddlink_attrs}>Inline Add</a>
+	{END inlineadd_link}
+
+
+</div>
+{END newrecord_controls_block}
+
+
+{BEGIN record_controls_block}
+<div  class="style1 rnr-bl rnr-b-recordcontrol {$brickclass_recordcontrol}">	
+			{BEGIN editselected_link}
+		<a href="#" class="rnr-button" {$editselectedlink_attrs} {$editselectedlink_span}>Edit selected</a>
+	{END editselected_link}
+	{BEGIN saveall_link}
+		<a href="#" class="rnr-button" {$savealllink_attrs} {$savealllink_span}>Save all</a>
+	{END saveall_link}
+	{BEGIN cancelall_link}
+		<a href="#" class="rnr-button" {$cancelalllink_attrs} {$cancelalllink_span}>Cancel</a>
+	{END cancelall_link}
+
+		{BEGIN deleteselected_link}
+		<a href="#" class="rnr-button" {$deleteselectedlink_attrs} {$deleteselectedlink_span}>Delete selected</a>
+	{END deleteselected_link}
+
+	
+</div>
+{END record_controls_block}
+
+<div class="rnr-hfiller"></div>
+</div>
+{END container_recordcontrols}
+
+
+		</div>
+		<div class="rnr-middle">
+			<div class="rnr-left {$blockclass_left}">
+				
+
+
+			</div>
+			<div class="rnr-center {$blockclass_center}">
+				
+
+{BEGIN container_message}
+<div class="rnr-c rnr-ch rnr-c-message">
+
+{BEGIN message_block}
+<div  class="style1 rnr-bc rnr-b-message {$brickclass_message}"><div class="rnr-message">{$message}</div></div>
+{END message_block}
+
+
+</div>
+{END container_message}
+
+
+
+{BEGIN container_grid}
+
+
+{BEGIN grid_block}
+						<table class="rnr-c rnr-cont rnr-c-grid rnr-b-grid rnr-gridtable  hoverable " cellpadding="0" >
+						<thead>
+															{BEGIN grid_header}
+								<tr class="rnr-toprow style1 {$gridHeader_class}" >
+									{BEGIN record_header}
+									{BEGIN listIcons_column}
+									<th iEditCont="all">&nbsp;</th>
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<th class="rnr-bc">
+										<input type="checkbox" {$checkboxheader_attrs}>
+									</th>
+									{END checkbox_column}
+
+																																			{BEGIN item_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$item_class}">
+									{BEGIN item_fieldheader}
+																				<span {$item_orderlinkattrs}>
+											{$label confees item}
+										</span>
+									{END item_fieldheader}
+									</th>
+									{END item_fieldheadercolumn}
+
+																	{BEGIN priceEarly_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$priceEarly_class}">
+									{BEGIN priceEarly_fieldheader}
+																				<span {$priceEarly_orderlinkattrs}>
+											{$label confees priceEarly}
+										</span>
+									{END priceEarly_fieldheader}
+									</th>
+									{END priceEarly_fieldheadercolumn}
+
+																	{BEGIN datelineEarly_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$datelineEarly_class}">
+									{BEGIN datelineEarly_fieldheader}
+																				<span {$datelineEarly_orderlinkattrs}>
+											{$label confees datelineEarly}
+										</span>
+									{END datelineEarly_fieldheader}
+									</th>
+									{END datelineEarly_fieldheadercolumn}
+
+																	{BEGIN priceNormal_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$priceNormal_class}">
+									{BEGIN priceNormal_fieldheader}
+																				<span {$priceNormal_orderlinkattrs}>
+											{$label confees priceNormal}
+										</span>
+									{END priceNormal_fieldheader}
+									</th>
+									{END priceNormal_fieldheadercolumn}
+
+																	{BEGIN datelineNormal_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$datelineNormal_class}">
+									{BEGIN datelineNormal_fieldheader}
+																				<span {$datelineNormal_orderlinkattrs}>
+											{$label confees datelineNormal}
+										</span>
+									{END datelineNormal_fieldheader}
+									</th>
+									{END datelineNormal_fieldheadercolumn}
+
+																	{BEGIN local_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$local_class}">
+									{BEGIN local_fieldheader}
+																				<span {$local_orderlinkattrs}>
+											{$label confees local}
+										</span>
+									{END local_fieldheader}
+									</th>
+									{END local_fieldheadercolumn}
+
+																	{BEGIN currency_fieldheadercolumn}
+									<th class="rnr-gridfieldlabel {$currency_class}">
+									{BEGIN currency_fieldheader}
+																				<span {$currency_orderlinkattrs}>
+											{$label confees currency}
+										</span>
+									{END currency_fieldheader}
+									</th>
+									{END currency_fieldheadercolumn}
+
+
+									
+									<th class="rnr-edge">&nbsp;</th>
+									{BEGIN endrecordheader_block}
+									<th class="rnr-cs">&nbsp;</th>
+									
+									{END endrecordheader_block}
+									
+									{END record_header}
+									
+								</tr>
+								{END grid_header}
+
+						</thead>
+						<tbody>	
+															{BEGIN grid_row}
+								<tr class="rnr-row style1 {$rowclass}" {$rowattrs} {$rowstyle}>
+									{BEGIN grid_record}
+									{BEGIN listIcons_column}
+									<td class="rnr-cc rnr-bc rnr-icons" iEditCont="all" {$rowstyle} {$recordattrs}>
+									
+																		{BEGIN inlineedit_column}
+									{BEGIN inlineedit_link}
+																			<a class="rnr-button-img" {$inlineeditlink_attrs} data-icon="inlineedit" title="Inline Edit"></a>
+									{END inlineedit_link}
+									{END inlineedit_column}
+
+									
+																		</td>	
+									{END listIcons_column}	
+
+																		{BEGIN checkbox_column}
+									<td class="rnr-bc" iEditCont="checkBox" {$rowstyle} {$recordattrs}>
+									{BEGIN checkbox}
+									<input type="checkbox" {$checkbox_attrs}>
+									{END checkbox}
+									</td>
+									{END checkbox_column}
+
+									
+										{BEGIN item_fieldcolumn}
+	<td class="{$item_class}" {$item_style} {$recordattrs}>
+		{$item_value}
+	</td>
+{END item_fieldcolumn}
+
+	{BEGIN priceEarly_fieldcolumn}
+	<td class="{$priceEarly_class}" {$priceEarly_style} {$recordattrs}>
+		{$priceEarly_value}
+	</td>
+{END priceEarly_fieldcolumn}
+
+	{BEGIN datelineEarly_fieldcolumn}
+	<td class="{$datelineEarly_class}" {$datelineEarly_style} {$recordattrs}>
+		{$datelineEarly_value}
+	</td>
+{END datelineEarly_fieldcolumn}
+
+	{BEGIN priceNormal_fieldcolumn}
+	<td class="{$priceNormal_class}" {$priceNormal_style} {$recordattrs}>
+		{$priceNormal_value}
+	</td>
+{END priceNormal_fieldcolumn}
+
+	{BEGIN datelineNormal_fieldcolumn}
+	<td class="{$datelineNormal_class}" {$datelineNormal_style} {$recordattrs}>
+		{$datelineNormal_value}
+	</td>
+{END datelineNormal_fieldcolumn}
+
+	{BEGIN local_fieldcolumn}
+	<td class="{$local_class}" {$local_style} {$recordattrs}>
+		{$local_value}
+	</td>
+{END local_fieldcolumn}
+
+	{BEGIN currency_fieldcolumn}
+	<td class="{$currency_class}" {$currency_style} {$recordattrs}>
+		{$currency_value}
+	</td>
+{END currency_fieldcolumn}
+
+
+									<td class="rnr-edge" {$recordattrs}>&nbsp;</td>
+									{BEGIN endrecord_block}
+									<td class="rnr-cs" {$endrecordblock_attrs}>&nbsp;</td>
+									{END endrecord_block}
+																	
+									{END grid_record}
+
+								</tr>
+								{END grid_row}
+															
+						</tbody>
+					</table>
+					
+
+{END grid_block}
+
+
+
+{END container_grid}
+
+
+
+{BEGIN container_pagination}
+<div class="rnr-c rnr-ch rnr-c-pagination">
+
+{BEGIN pagination_block}
+<div  class="style1 rnr-bc rnr-b-pagination {$brickclass_pagination}">{$pagination}</div>
+{END pagination_block}
+
+
+</div>
+{END container_pagination}
+
+
+			</div>
+			<div class="rnr-right {$blockclass_right}">
+				
+			</div>
+		</div>
+		<div class="rnr-bottom {$blockclass_bottom}">
+			<!--%%bottom%%-->
+		</div>
+	</div>
+		
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<HTML {$html_attrs}><HEAD><TITLE>{$pagetitle}</TITLE>
+<META content=IE=7 http-equiv=X-UA-Compatible>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="styles/default.css">{BEGIN rtlCSS}<LINK rel=stylesheet type=text/css href="styles/defaultRTL.css">{END rtlCSS}{BEGIN styleCSSFiles}<LINK rel=stylesheet type=text/css href="{$stylepath}">{END styleCSSFiles}{BEGIN pageCSSFiles}<LINK rel=stylesheet type=text/css href="{$pagestylepath}">{END pageCSSFiles}<!--[if IE]><LINK rel=stylesheet type=text/css href="styles/defaultIE.css">{BEGIN IEcssFiles}<LINK rel=stylesheet type=text/css href="{$stylepathIE}">{END IEcssFiles}<![endif]-->
+<META name=GENERATOR content="MSHTML 11.00.9600.17416"></HEAD>
+<BODY class="{$stylename}" {$bodyattrs}>{BEGIN body}{$header} 
+<TABLE class=runner-toptable style="WIDTH: 100%" cellPadding=0>
+  <TBODY>
+  <TR class=runner-header>
+    <TD class=runner-top style="WIDTH: auto" colSpan=3>
+      {BEGIN container_search}
+      <TABLE class="runner-c runner-c-search" style="WIDTH: 500px" cellPadding=0 
+      align=center>
+        <TBODY>
+        <TR class="runner-toprow style2 header">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc>
+            
+            <DIV class="runner-b-srchheader {$brickclass_srchheader}">Paper - 
+            Advanced search {$CrossElem}</DIV></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR>
+        {BEGIN conditions_block}<TR class="runner-row style1 runner-b-srchconditions {$brickclass_srchconditions}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents">
+            
+            <CENTER><SPAN class=fieldname>Criteria:&nbsp;</SPAN> <INPUT 
+            class=runner-radio-button type=radio name=srchType 
+            {$all_checkbox}><LABEL for=all_checkbox> All conditions</LABEL> 
+            &nbsp;&nbsp;&nbsp; <INPUT class=runner-radio-button type=radio 
+            name=srchType {$any_checkbox}><LABEL for=any_checkbox> Any 
+            condition</LABEL> </CENTER></TD>
+          <TD class=runner-cr></TD></TR>
+        {END conditions_block}<TR class="runner-row style1 runner-b-wrapper {$wrapperclass_fields}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents runner-wrapper" 
+          style="WIDTH: auto">
+            
+            {BEGIN container_fields}
+            <TABLE class="runner-c runner-c-fields" style="WIDTH: 1528px" 
+            cellPadding=0>
+              <TBODY>
+              <TR class="runner-toprow header style2 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc style="WIDTH: 89px"></TD>
+                <TD class=runner-cc style="WIDTH: 30px">
+                  NOT</TD>
+                <TD class=runner-cc style="WIDTH: 1353px" colSpan=3></TD>
+                <TD class=runner-cr style="WIDTH: 13px"></TD></TR>
+              {BEGIN paperID_fieldblock}<TR class="runner-row style1 runner-b-srchfields" style="HEIGHT: 21px">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV 
+                  class="fieldlabel_paperID {$fielddispclass_paperID}">Paper 
+                  </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV 
+                  class="fieldoption_paperID {$fielddispclass_paperID}"><INPUT 
+                  type=checkbox {$paperID_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV 
+                  class="fieldoption_paperID {$fielddispclass_paperID}">{$searchtype_paperID} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_paperID {$fielddispclass_paperID}">{$paperID_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_paperID {$fielddispclass_paperID}">{$paperID_editcontrol1}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END paperID_fieldblock}{BEGIN title_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV class="fieldlabel_title {$fielddispclass_title}">Title 
+                  </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV class="fieldoption_title {$fielddispclass_title}"><INPUT 
+                  type=checkbox {$title_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV class="fieldoption_title {$fielddispclass_title}">{$searchtype_title} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_title {$fielddispclass_title}">{$title_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV class="fieldcontrol_title {$fielddispclass_title}">{$title_editcontrol1}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END title_fieldblock}{BEGIN multiAuthor_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV 
+                  class="fieldlabel_multiAuthor {$fielddispclass_multiAuthor}">Multi 
+                  Author </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV 
+                  class="fieldoption_multiAuthor {$fielddispclass_multiAuthor}"><INPUT 
+                  type=checkbox {$multiAuthor_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV 
+                  class="fieldoption_multiAuthor {$fielddispclass_multiAuthor}">{$searchtype_multiAuthor} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_multiAuthor {$fielddispclass_multiAuthor}">{$multiAuthor_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_multiAuthor {$fielddispclass_multiAuthor}">{$multiAuthor_editcontrol1}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END multiAuthor_fieldblock}{BEGIN fullName_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV 
+                  class="fieldlabel_fullName {$fielddispclass_fullName}">Full 
+                  Name </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV 
+                  class="fieldoption_fullName {$fielddispclass_fullName}"><INPUT 
+                  type=checkbox {$fullName_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV 
+                  class="fieldoption_fullName {$fielddispclass_fullName}">{$searchtype_fullName} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_fullName {$fielddispclass_fullName}">{$fullName_editcontrol}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_fullName {$fielddispclass_fullName}">{$fullName_editcontrol1}&nbsp; 
+                </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END fullName_fieldblock}{BEGIN institution_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV 
+                  class="fieldlabel_institution {$fielddispclass_institution}">Institution 
+                  </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV 
+                  class="fieldoption_institution {$fielddispclass_institution}"><INPUT 
+                  type=checkbox {$institution_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV 
+                  class="fieldoption_institution {$fielddispclass_institution}">{$searchtype_institution} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_institution {$fielddispclass_institution}">{$institution_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_institution {$fielddispclass_institution}">{$institution_editcontrol1}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END institution_fieldblock}{BEGIN cfid_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV class="fieldlabel_cfid {$fielddispclass_cfid}">Type 
+                  </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV class="fieldoption_cfid {$fielddispclass_cfid}"><INPUT 
+                  type=checkbox {$cfid_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV class="fieldoption_cfid {$fielddispclass_cfid}">{$searchtype_cfid} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV class="fieldcontrol_cfid {$fielddispclass_cfid}">{$cfid_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV class="fieldcontrol_cfid {$fielddispclass_cfid}">{$cfid_editcontrol1}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END cfid_fieldblock}{BEGIN date_submit_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV 
+                  class="fieldlabel_date_submit {$fielddispclass_date_submit}">Date 
+                  Submit </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV 
+                  class="fieldoption_date_submit {$fielddispclass_date_submit}"><INPUT 
+                  type=checkbox {$date_submit_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV 
+                  class="fieldoption_date_submit {$fielddispclass_date_submit}">{$searchtype_date_submit} </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_date_submit {$fielddispclass_date_submit}">{$date_submit_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_date_submit {$fielddispclass_date_submit}">{$date_submit_editcontrol1}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END date_submit_fieldblock}{BEGIN paymentStatus_fieldblock}<TR class="runner-row style1 runner-b-srchfields">
+                <TD class=runner-cl style="WIDTH: 13px"></TD>
+                <TD class="runner-cc runner-cc1" style="WIDTH: 91px">
+                  
+                  <DIV 
+                  class="fieldlabel_paymentStatus {$fielddispclass_paymentStatus}">Payment 
+                  Status </DIV></TD></TD>
+                <TD class="runner-cc alt" style="WIDTH: 32px">
+                  
+                  <DIV 
+                  class="fieldoption_paymentStatus {$fielddispclass_paymentStatus}"><INPUT 
+                  type=checkbox {$paymentStatus_notbox}> </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 183px">
+                  
+                  <DIV 
+                  class="fieldoption_paymentStatus {$fielddispclass_paymentStatus}">{$searchtype_paymentStatus} 
+</DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_paymentStatus {$fielddispclass_paymentStatus}">{$paymentStatus_editcontrol}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cc alt" style="WIDTH: 578px">
+                  
+                  <DIV 
+                  class="fieldcontrol_paymentStatus {$fielddispclass_paymentStatus}">{$paymentStatus_editcontrol1}&nbsp; 
+                  </DIV></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"></TD></TR>
+              {END paymentStatus_fieldblock}<TR class="{$cfooterclass_fields}">
+                <TD class=runner-cl style="WIDTH: 13px"><IMG src="images/spacer.gif"></TD>
+                <TD class=runner-cc style="WIDTH: 99px"></TD>
+                <TD class="runner-cc alt" style="WIDTH: 40px"></TD>
+                <TD class="runner-cc alt" style="WIDTH: 191px"></TD>
+                <TD class="runner-cc alt" style="WIDTH: 586px"></TD>
+                <TD class="runner-cc alt" style="WIDTH: 586px"></TD>
+                <TD class="runner-cr alt" style="WIDTH: 13px"><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_fields}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR 
+        class="runner-row style2 runner-b-srchbuttons {$brickclass_srchbuttons}">
+          <TD class=runner-cl></TD>
+          <TD class="runner-cc runner-brickcontents">
+            {BEGIN search_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$searchbutton_attrs}>Search</A> 
+            </SPAN>{END search_button}{BEGIN reset_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$resetbutton_attrs}>Reset</A> 
+            </SPAN>{END reset_button}{BEGIN back_button}<SPAN class=runner-btnframe><SPAN class=runner-btnleft></SPAN><SPAN class=runner-btnright></SPAN><A class=runner-button href="#" {$backbutton_attrs}>Back to list</A> 
+            </SPAN>{END back_button}</TD>
+          <TD class=runner-cr></TD></TR>
+        <TR class="{$cfooterclass_search}">
+          <TD class=runner-cl><IMG src="images/spacer.gif"></TD>
+          <TD class=runner-cc></TD>
+          <TD class=runner-cr><IMG src="images/spacer.gif"></TD></TR></TBODY></TABLE>{END container_search}</TD></TR>
+  <TR class=runner-body>
+    <TD class="runner-left {$blockclass_left}"></TD>
+    <TD class="runner-center {$blockclass_center}"></TD>
+    <TD class="runner-right {$blockclass_right}"></TD></TR>
+  <TR class=runner-footer>
+    <TD class=runner-bottom 
+colSpan=3><!--%%bottom%%--></TD></TR></TBODY></TABLE>{$footer}{END body} </BODY></HTML>

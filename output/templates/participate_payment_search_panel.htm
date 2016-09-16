@@ -1,0 +1,67 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_itemID}
+			<a href="#" id="addSearchControl_itemID" class="addSearchControl" {$addSearchControl_itemID_attrs}>Item ID</a><br>
+		{END addSearch_itemID}
+		{BEGIN addSearch_currency}
+			<a href="#" id="addSearchControl_currency" class="addSearchControl" {$addSearchControl_currency_attrs}>Currency</a><br>
+		{END addSearch_currency}
+		{BEGIN addSearch_amount}
+			<a href="#" id="addSearchControl_amount" class="addSearchControl" {$addSearchControl_amount_attrs}>Amount</a><br>
+		{END addSearch_amount}
+		{BEGIN addSearch_mode}
+			<a href="#" id="addSearchControl_mode" class="addSearchControl" {$addSearchControl_mode_attrs}>Mode</a><br>
+		{END addSearch_mode}
+		{BEGIN addSearch_tx}
+			<a href="#" id="addSearchControl_tx" class="addSearchControl" {$addSearchControl_tx_attrs}>Transaction Ref</a><br>
+		{END addSearch_tx}
+		{BEGIN addSearch_payDate}
+			<a href="#" id="addSearchControl_payDate" class="addSearchControl" {$addSearchControl_payDate_attrs}>Pay Date</a><br>
+		{END addSearch_payDate}
+	</div>
+	
+	<table class="controlsBlock">
+	{BEGIN searchCtrlBlock}
+		<tr class="srchPanelRow" {$filterRow_attrs}>
+			<td class="srchPanelCell">{$delCtrlButt}</td>
+			<td class="srchPanelCell">{$fLabel}:&nbsp;</td>
+			<td class="srchPanelCell srchPanelCell2">
+				<div class="runner-searchtype">{$searchtype}</div>
+				<div class="runner-searchcontrol">{$searchcontrol}</div>
+				<div class="runner-searchcontrol">{$searchcontrol1}</div>
+		</tr>
+	{END searchCtrlBlock}
+	</table>
+	
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>

@@ -1,0 +1,5 @@
+
+Runner.pages.PageSettings.addPageEvent("conference",Runner.pages.constants.PAGE_LIST,"afterPageReady",function(pageObj,proxy,pageid){pageObj.buttonNames[pageObj.buttonNames.length]='Generate_Fee';if(!pageObj.buttonEventBefore['Generate_Fee']){pageObj.buttonEventBefore['Generate_Fee']=function(params,ctrl,pageObj,proxy,pageid,rowData){}}
+if(!pageObj.buttonEventAfter['Generate_Fee']){pageObj.buttonEventAfter['Generate_Fee']=function(result,ctrl,pageObj,proxy,pageid,rowData){var message=" Successful !!!";ctrl.setMessage(message);}}
+$('a[id=Generate_Fee]').each(function(){if($(this).closest('tr.gridRowAdd').length){return;}
+this.id="Generate_Fee"+"_"+Runner.genId();var button_Generate_Fee=new Runner.form.Button({id:this.id,btnName:"Generate_Fee"});button_Generate_Fee.init({args:[pageObj,proxy,pageid]});});});

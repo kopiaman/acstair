@@ -1,0 +1,45 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="fieldGrid">
+{BEGIN sDate_tabfieldblock}
+<tr class="{$fielddispclass_sDate}" data-fieldname="sDate">
+	<td class="style1 rnr-label">
+		{BEGIN sDate_label}{$label conference sDate}{END sDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$sDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END sDate_tabfieldblock}
+{BEGIN eDate_tabfieldblock}
+<tr class="{$fielddispclass_eDate}" data-fieldname="eDate">
+	<td class="style1 rnr-label">
+		{BEGIN eDate_label}{$label conference eDate}{END eDate_label}
+	</td>
+	<td class="rnr-control style3">
+		{$eDate_editcontrol}&nbsp;
+	</td>
+</tr>
+{END eDate_tabfieldblock}
+{BEGIN cTime_tabfieldblock}
+<tr class="{$fielddispclass_cTime}" data-fieldname="cTime">
+	<td class="style1 rnr-label">
+		{BEGIN cTime_label}{$label conference cTime}{END cTime_label}
+	</td>
+	<td class="rnr-control style3">
+		{$cTime_editcontrol}&nbsp;
+	</td>
+</tr>
+{END cTime_tabfieldblock}
+</table>
+
+
+
+
+{END container_1}
+
+</div>

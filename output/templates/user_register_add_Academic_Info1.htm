@@ -1,0 +1,72 @@
+<div {$pageattrs}>
+
+{BEGIN container_1}
+
+
+
+<table class="runner-c" cellpadding="0">
+{BEGIN institution_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_institution {$fielddispclass_institution}">
+				{BEGIN institution_label}Institution / Organisation{END institution_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_institution {$fielddispclass_institution}">
+				{$institution_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END institution_tabfieldblock}
+{BEGIN faculty_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_faculty {$fielddispclass_faculty}">
+				{BEGIN faculty_label}Faculty{END faculty_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_faculty {$fielddispclass_faculty}">
+				{$faculty_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END faculty_tabfieldblock}
+{BEGIN department_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_department {$fielddispclass_department}">
+				{BEGIN department_label}Department{END department_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_department {$fielddispclass_department}">
+				{$department_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END department_tabfieldblock}
+{BEGIN research_tabfieldblock}
+	<tr class="runner-row style1">
+		<td class="runner-cc runner-cc1">
+			<div class="fieldlabel_research {$fielddispclass_research}">
+				{BEGIN research_label}Research Field{END research_label}
+			</div>
+		</td>
+		<td class="runner-cc alt">
+			<div class="fieldcontrol_research {$fielddispclass_research}">
+				{$research_editcontrol}
+			</div>
+		</td>
+	</tr>
+{END research_tabfieldblock}
+</table>
+
+
+
+
+
+{END container_1}
+
+</div>

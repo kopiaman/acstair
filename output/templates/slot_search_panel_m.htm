@@ -1,0 +1,74 @@
+<div class="searchOptions bottomPanelBorder" {$srchOpt_attrs}>
+	<!-- Search panel content -->
+	<div class="srchCritTop" style="display: none;">
+		Criteria:&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$all_checkbox}> {BEGIN all_checkbox_label}all{END all_checkbox_label}
+		&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="srchType" class="runner-radio-button" {$any_checkbox}> {BEGIN any_checkbox_label}any{END any_checkbox_label}
+	</div>
+	
+	<div class="addOption">
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideControlChooseMenu{$id}" class="runner-button" {$showHideCtrls_attrs}>Add field</a>
+		</span>
+		&nbsp;&nbsp;&nbsp;
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" id="showHideSearchType{$id}" class="runner-button" {$showHideCtrlsOpt_attrs}>{$showHideOpt_mess}</a>
+		</span>
+	</div>
+	
+	<!-- choose controls div -->
+	<div class="runner-panel controlChooseMenu" {$controlChooseMenuDiv_attrs}>
+		{BEGIN addSearch_userID}
+			<a href="#" id="addSearchControl_userID" class="addSearchControl" {$addSearchControl_userID_attrs}>Presenter</a><br>
+		{END addSearch_userID}
+		{BEGIN addSearch_paperRef}
+			<a href="#" id="addSearchControl_paperRef" class="addSearchControl" {$addSearchControl_paperRef_attrs}>Paper Ref</a><br>
+		{END addSearch_paperRef}
+		{BEGIN addSearch_cid}
+			<a href="#" id="addSearchControl_cid" class="addSearchControl" {$addSearchControl_cid_attrs}>Conference </a><br>
+		{END addSearch_cid}
+		{BEGIN addSearch_title}
+			<a href="#" id="addSearchControl_title" class="addSearchControl" {$addSearchControl_title_attrs}>Title</a><br>
+		{END addSearch_title}
+		{BEGIN addSearch_slotDate}
+			<a href="#" id="addSearchControl_slotDate" class="addSearchControl" {$addSearchControl_slotDate_attrs}>Day</a><br>
+		{END addSearch_slotDate}
+		{BEGIN addSearch_slotRoom}
+			<a href="#" id="addSearchControl_slotRoom" class="addSearchControl" {$addSearchControl_slotRoom_attrs}>Room</a><br>
+		{END addSearch_slotRoom}
+		{BEGIN addSearch_slotTime}
+			<a href="#" id="addSearchControl_slotTime" class="addSearchControl" {$addSearchControl_slotTime_attrs}>Time</a><br>
+		{END addSearch_slotTime}
+		{BEGIN addSearch_slotTurn}
+			<a href="#" id="addSearchControl_slotTurn" class="addSearchControl" {$addSearchControl_slotTurn_attrs}>Turn</a><br>
+		{END addSearch_slotTurn}
+		{BEGIN addSearch_paperStatus}
+			<a href="#" id="addSearchControl_paperStatus" class="addSearchControl" {$addSearchControl_paperStatus_attrs}>Paper Status</a><br>
+		{END addSearch_paperStatus}
+		{BEGIN addSearch_paymentStatus}
+			<a href="#" id="addSearchControl_paymentStatus" class="addSearchControl" {$addSearchControl_paymentStatus_attrs}>Payment Status</a><br>
+		{END addSearch_paymentStatus}
+	</div>
+	
+	<div class="controlsBlock">
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow" {$filterRow_attrs}>
+			<div class="srchPanelCell">{$delCtrlButt}&nbsp;{$fLabel}:&nbsp;</div>
+			<div class="srchPanelCell srchPanelCell2">{$searchtype} {$searchcontrol} {$searchcontrol1}</div>
+		</div>
+		{END searchCtrlBlock}
+	</div>
+		
+	<div class="bottomSearchButt" align="left" {$bottomSearchButt_attrs}>
+		<span class="runner-btnframe">
+		<span class="runner-btnleft"></span>
+		<span class="runner-btnright"></span>
+		<a href="#" class="runner-button" {$searchbutton_attrs}>Search</a>
+		</span>
+	</div>
+</div>
